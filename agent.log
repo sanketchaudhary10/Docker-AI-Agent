@@ -1,0 +1,866 @@
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: How many pods are in the default namespace?
+INFO:root:Parsed intents: {'pods': True, 'namespace': True, 'deployments': False, 'logs': False}, keywords: ['pods', 'default', 'namespace']
+INFO:root:Response: There are 0 pods in the default namespace.
+INFO:root:Received query: Which pod is spawned by my-deployment?
+INFO:root:Parsed intents: {'pods': False, 'namespace': False, 'deployments': False, 'logs': False}, keywords: ['pod', '-', 'deployment']
+INFO:root:Response: I'm sorry, I couldn't understand your query. Please try rephrasing.
+INFO:root:Received query: Which pod is spawned by my-deployment?
+INFO:root:Parsed intents: {'pods': False, 'namespace': False, 'deployments': False, 'logs': False}, keywords: ['pod', '-', 'deployment']
+INFO:root:Response: I'm sorry, I couldn't understand your query. Please try rephrasing.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: How many pods are in the default namespace?
+INFO:root:Parsed intents: {'pods': True, 'namespace': True, 'deployments': False, 'logs': False}, keywords: ['pods', 'default', 'namespace']
+INFO:root:Response: There are 2 pods in the default namespace.
+INFO:root:Received query: Which pod is spawned by sample-python-app?
+INFO:root:Parsed intents: {'pods': False, 'namespace': False, 'deployments': False, 'logs': False}, keywords: ['pod', 'sample', 'app']
+INFO:root:Response: I'm sorry, I couldn't understand your query. Please try rephrasing.
+INFO:root:Received query: Which pod is spawned by sample-web?
+INFO:root:Parsed intents: {'pods': False, 'namespace': False, 'deployments': False, 'logs': False}, keywords: ['pod', 'sample', 'web']
+INFO:root:Response: I'm sorry, I couldn't understand your query. Please try rephrasing.
+INFO:root:Received query: Which pod is spawned by sample-python?
+INFO:root:Parsed intents: {'pods': False, 'namespace': False, 'deployments': False, 'logs': False}, keywords: ['pod', 'sample', 'python']
+INFO:root:Response: I'm sorry, I couldn't understand your query. Please try rephrasing.
+INFO:root:Received query: How many nodes are there in the cluster?
+INFO:root:Parsed intents: {'pods': False, 'namespace': False, 'deployments': False, 'logs': False}, keywords: ['nodes', 'cluster']
+INFO:root:Response: I'm sorry, I couldn't understand your query. Please try rephrasing.
+INFO:root:Received query: How many nodes are there in the cluster?
+INFO:root:Parsed intents: {'pods': False, 'namespace': False, 'deployments': False, 'logs': False}, keywords: ['nodes', 'cluster']
+INFO:root:Response: I'm sorry, I couldn't understand your query. Please try rephrasing.
+INFO:root:Received query: How many pods are in the default namespace?
+INFO:root:Parsed intents: {'pods': True, 'namespace': True, 'deployments': False, 'logs': False}, keywords: ['pods', 'default', 'namespace']
+INFO:root:Response: There are 2 pods in the default namespace.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: What is the status of the pod named 'sample-python'?
+INFO:root:Parsed intents: {'pods': False, 'namespace': False, 'deployments': False, 'logs': False}, keywords: ['status', 'pod', 'sample', 'python']
+INFO:root:Response: I'm sorry, I couldn't understand your query. Please try rephrasing.
+INFO:root:Received query: What is the status of the pod named 'sample-python-675d887564-nzzbr'?
+INFO:root:Parsed intents: {'pods': False, 'namespace': False, 'deployments': False, 'logs': False}, keywords: ['status', 'pod', 'sample', 'nzzbr']
+INFO:root:Response: I'm sorry, I couldn't understand your query. Please try rephrasing.
+INFO:root:Received query: What is the status of pod sample-python-675d887564-nzzbr?'?
+INFO:root:Parsed intents: {'pods': False, 'namespace': False, 'deployments': False, 'logs': False}, keywords: ['status', 'sample']
+INFO:root:Response: I'm sorry, I couldn't understand your query. Please try rephrasing.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: What is the status of pod sample-python-675d887564-nzzbr?
+INFO:root:Parsed intents: {'pods': False, 'namespace': False, 'deployments': False, 'logs': False}, keywords: ['status', 'sample']
+INFO:root:Response: I'm sorry, I couldn't understand your query. Please try rephrasing.
+INFO:root:Received query: How many nodes are there in the cluster?
+INFO:root:Parsed intents: {'pods': False, 'namespace': False, 'deployments': False, 'logs': False}, keywords: ['nodes', 'cluster']
+INFO:root:Response: I'm sorry, I couldn't understand your query. Please try rephrasing.
+INFO:root:Received query: What is the status of pod sample-python-675d887564-nzzbr?
+INFO:root:Parsed intents: {'pods': False, 'namespace': False, 'deployments': False, 'logs': False}, keywords: ['status', 'sample']
+INFO:root:Response: I'm sorry, I couldn't understand your query. Please try rephrasing.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: What is the status of pod sample-python-675d887564-nzzbr?
+INFO:root:Parsed intents: {'pods': True, 'namespace': True, 'deployments': True, 'logs': True}, keywords: ['status', 'sample']
+INFO:root:Response: There are 2 pods in the default namespace.
+INFO:root:Received query: What is the status of pod sample-python?
+INFO:root:Parsed intents: {'pods': True, 'namespace': True, 'deployments': True, 'logs': True}, keywords: ['status', 'sample', 'python']
+INFO:root:Response: There are 2 pods in the default namespace.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: How many pods are in the default namespace?
+INFO:root:Parsed intents: {'pods': True, 'namespace': True, 'deployments': True, 'logs': True}, keywords: ['pods', 'default', 'namespace']
+INFO:root:Response: There are 2 pods in the default namespace.
+INFO:root:Received query: What is the status of pod sample-python-675d887564-nzzbr?
+INFO:root:Parsed intents: {'pods': True, 'namespace': True, 'deployments': True, 'logs': True}, keywords: ['status', 'sample']
+INFO:root:Response: There are 2 pods in the default namespace.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: What is the status of pod sample-python-675d887564-nzzbr?
+INFO:root:Parsed intents: {'pods': True, 'namespace': True, 'status': True, 'deployments': True, 'logs': True}, keywords: ['status', 'sample']
+INFO:root:Response: There are 2 pods in the default namespace.
+INFO:root:Received query: What is the status of pod sample-python-675d887564-nzzbr?
+INFO:root:Parsed intents: {'pods': True, 'namespace': True, 'status': True, 'deployments': True, 'logs': True}, keywords: ['status', 'sample']
+INFO:root:Response: There are 2 pods in the default namespace.
+INFO:root:Received query: What is the status of pod sample-python-675d887564-nzzbr?
+INFO:root:Parsed intents: {'pods': True, 'namespace': True, 'status': True, 'deployments': True, 'logs': True}, keywords: ['status', 'sample']
+INFO:root:Response: There are 2 pods in the default namespace.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: What is the status of pod sample-python-675d887564-nzzbr?
+INFO:root:Parsed intents: {'pods': True, 'namespace': True, 'status': True, 'deployments': True, 'logs': True}, keywords: ['status', 'sample']
+INFO:root:Response: There are 2 pods in the default namespace.
+INFO:root:Received query: What is the status of pod sample-python-675d887564-nzzbr?
+INFO:root:Parsed intents: {'pods': True, 'namespace': True, 'status': True, 'deployments': True, 'logs': True}, keywords: ['status', 'sample']
+INFO:root:Response: There are 2 pods in the default namespace.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: What is the status of pod sample-python-675d887564-nzzbr?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'pod', 'sample', '-', 'python-675d887564', '-', 'nzzbr']
+INFO:root:Response: Pod specified in the query was not found in the default namespace.
+INFO:root:Received query: What is the status of pod sample-python-675d887564-nzzbr?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'pod', 'sample', '-', 'python-675d887564', '-', 'nzzbr']
+INFO:root:Response: Pod specified in the query was not found in the default namespace.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: What is the status of pod sample-python-675d887564-nzzbr?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'pod', 'sample', '-', 'python-675d887564', '-', 'nzzbr']
+INFO:root:Response: Pod specified in the query was not found in the default namespace.
+INFO:root:Received query: What is the status of pod sample-python-675d887564-nzzbr?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'pod', 'sample', '-', 'python-675d887564', '-', 'nzzbr']
+INFO:root:Response: Pod specified in the query was not found in the default namespace.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: What is the status of pod sample-python-675d887564-nzzbr?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'pod', 'sample', '-', 'python-675d887564', '-', 'nzzbr']
+INFO:root:Response: Pod specified in the query was not found in the default namespace.
+INFO:root:Received query: What is the status of pod sample-python-675d887564-nzzbr?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'pod', 'sample', '-', 'python-675d887564', '-', 'nzzbr']
+INFO:root:Response: Pod specified in the query was not found in the default namespace.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: What is the status of pod sample-python-675d887564-nzzbr?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'pod', 'sample', '-', 'python-675d887564', '-', 'nzzbr']
+INFO:root:Response: Pod specified in the query was not found in the default namespace.
+INFO:root:Received query: What is the status of pod sample-python-675d887564-nzzbr?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'pod', 'sample', '-', 'python-675d887564', '-', 'nzzbr']
+INFO:root:Response: Pod specified in the query was not found in the default namespace.
+INFO:root:Received query: What is the status of pod sample-python-675d887564-nzzbr?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'pod', 'sample', '-', 'python-675d887564', '-', 'nzzbr']
+INFO:root:Response: Pod specified in the query was not found in the default namespace.
+INFO:root:Received query: What is the status of pod sample-python-675d887564-nzzbr?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'pod', 'sample', '-', 'python-675d887564', '-', 'nzzbr']
+INFO:root:Response: Pod specified in the query was not found in the default namespace.
+INFO:root:Received query: What is the status of pod sample-python-675d887564-nzzbr?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'pod', 'sample', '-', 'python-675d887564', '-', 'nzzbr']
+INFO:root:Response: Pod specified in the query was not found in the default namespace.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: What is the status of pod sample-python-675d887564-nzzbr?
+ERROR:root:Error processing query: name 'keywords' is not defined
+INFO:root:Received query: What is the status of pod sample-python-675d887564-nzzbr?
+ERROR:root:Error processing query: name 'keywords' is not defined
+INFO:root:Received query: What is the status of pod sample-python-675d887564-bljpq?
+ERROR:root:Error processing query: name 'keywords' is not defined
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: What is the status of pod sample-python-675d887564-bljpq?
+ERROR:root:Error processing query: name 'keywords' is not defined
+INFO:root:Received query: What is the status of pod sample-python-675d887564-bljpq?
+ERROR:root:Error processing query: name 'keywords' is not defined
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: What is the status of the pod named 'sample-web-76445f6f6-htfmt'?
+ERROR:root:Error processing query: name 'keywords' is not defined
+INFO:root:Received query: What is the status of the pod named 'orange'?
+ERROR:root:Error processing query: name 'keywords' is not defined
+INFO:root:Received query: What is the status of the pod named 'orange'?
+ERROR:root:Error processing query: name 'keywords' is not defined
+INFO:root:Received query: What is the status of the pod named 'orange'?
+ERROR:root:Error processing query: name 'keywords' is not defined
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: What is the status of the pod named 'orange'?
+ERROR:root:Error processing query: name 'keywords' is not defined
+INFO:root:Received query: What is the status of the pod named 'orange'?
+ERROR:root:Error processing query: name 'keywords' is not defined
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: What is the status of the pod named 'orange'?
+ERROR:root:Error processing query: name 'keywords' is not defined
+INFO:root:Received query: What is the status of the pod named 'orange'?
+ERROR:root:Error processing query: name 'keywords' is not defined
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: What is the status of the pod named 'orange'?
+ERROR:root:Error processing query: name 'keywords' is not defined
+Traceback (most recent call last):
+  File "D:\cleric assignment\assignment\cleric-query-agent\main.py", line 99, in handle_query
+    intents, keywords = parse_query(request.query)
+  File "D:\cleric assignment\assignment\cleric-query-agent\nlp_utils.py", line 57, in parse_query
+    print("Keywords:", keywords)
+NameError: name 'keywords' is not defined
+INFO:root:Received query: What is the status of the pod named 'orange'?
+ERROR:root:Error processing query: name 'keywords' is not defined
+Traceback (most recent call last):
+  File "D:\cleric assignment\assignment\cleric-query-agent\main.py", line 99, in handle_query
+    intents, keywords = parse_query(request.query)
+  File "D:\cleric assignment\assignment\cleric-query-agent\nlp_utils.py", line 57, in parse_query
+    print("Keywords:", keywords)
+NameError: name 'keywords' is not defined
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: What is the status of the pod named 'orange'?
+ERROR:root:Error processing query: name 'keywords' is not defined
+INFO:root:Received query: What is the status of the pod named 'orange'?
+ERROR:root:Error processing query: name 'keywords' is not defined
+INFO:root:Received query: How many pods are in the default namespace?
+ERROR:root:Error processing query: name 'keywords' is not defined
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: How many pods are in the default namespace?
+ERROR:root:Error processing query: name 'keywords' is not defined
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: How many pods are in the default namespace?
+ERROR:root:Error processing query: name 'keywords' is not defined
+Traceback (most recent call last):
+  File "D:\cleric assignment\assignment\cleric-query-agent\main.py", line 99, in handle_query
+    intents, keywords = parse_query(request.query)
+  File "D:\cleric assignment\assignment\cleric-query-agent\nlp_utils.py", line 57, in parse_query
+    print("Keywords:", keywords)
+NameError: name 'keywords' is not defined
+INFO:root:Received query: How many pods are in the default namespace?
+ERROR:root:Error processing query: name 'keywords' is not defined
+Traceback (most recent call last):
+  File "D:\cleric assignment\assignment\cleric-query-agent\main.py", line 99, in handle_query
+    intents, keywords = parse_query(request.query)
+  File "D:\cleric assignment\assignment\cleric-query-agent\nlp_utils.py", line 57, in parse_query
+    print("Keywords:", keywords)
+NameError: name 'keywords' is not defined
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: How many pods are in the default namespace?
+ERROR:root:Error processing query: name 'keywords' is not defined
+INFO:root:Received query: How many pods are in the default namespace?
+ERROR:root:Error processing query: name 'keywords' is not defined
+INFO:root:Received query: How many pods are in the default namespace?
+ERROR:root:Error processing query: name 'keywords' is not defined
+INFO:root:Received query: How many pods are in the default namespace?
+ERROR:root:Error processing query: name 'keywords' is not defined
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: How many pods are in the default namespace?
+ERROR:root:Error processing query: name 'keywords' is not defined
+INFO:root:Received query: How many pods are in the default namespace?
+ERROR:root:Error processing query: name 'keywords' is not defined
+INFO:root:Received query: What is the status of pod grapes
+ERROR:root:Error processing query: name 'keywords' is not defined
+INFO:root:Received query: What is the status of pod grapes
+ERROR:root:Error processing query: name 'keywords' is not defined
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: What is the status of pod grapes?
+ERROR:root:Error processing query: name 'keywords' is not defined
+Traceback (most recent call last):
+  File "D:\cleric assignment\assignment\cleric-query-agent\main.py", line 98, in handle_query
+    intents, keywords = parse_query(request.query)
+  File "D:\cleric assignment\assignment\cleric-query-agent\nlp_utils.py", line 57, in parse_query
+    print("Keywords:", keywords)
+NameError: name 'keywords' is not defined
+INFO:root:Received query: What is the status of pod grapes?
+ERROR:root:Error processing query: name 'keywords' is not defined
+Traceback (most recent call last):
+  File "D:\cleric assignment\assignment\cleric-query-agent\main.py", line 98, in handle_query
+    intents, keywords = parse_query(request.query)
+  File "D:\cleric assignment\assignment\cleric-query-agent\nlp_utils.py", line 57, in parse_query
+    print("Keywords:", keywords)
+NameError: name 'keywords' is not defined
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: What is the status of pod grapes?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'pod', 'grapes']
+INFO:root:Pods in namespace: [{'name': 'apple', 'status': 'Running', 'restarts': 1}, {'name': 'orange', 'status': 'Running', 'restarts': 1}]
+INFO:root:Response: Pod specified in the query was not found in the default namespace.
+INFO:root:Received query: What is the status of pod grapes?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'pod', 'grapes']
+INFO:root:Pods in namespace: [{'name': 'apple', 'status': 'Running', 'restarts': 1}, {'name': 'orange', 'status': 'Running', 'restarts': 1}]
+INFO:root:Response: Pod specified in the query was not found in the default namespace.
+INFO:root:Received query: Which pod is spawned by minikube?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': False, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'minikube']
+INFO:root:Pods in namespace: [{'name': 'apple', 'status': 'Running', 'restarts': 1}, {'name': 'orange', 'status': 'Running', 'restarts': 1}]
+INFO:root:Response: There are 2 pods in the default namespace.
+INFO:root:Received query: Which pod is spawned by orange?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': False, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'orange']
+INFO:root:Pods in namespace: [{'name': 'apple', 'status': 'Running', 'restarts': 1}, {'name': 'orange', 'status': 'Running', 'restarts': 1}]
+INFO:root:Response: There are 2 pods in the default namespace.
+INFO:root:Received query: What is the status of the pod named 'orange'?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'the', 'pod', 'named', 'orange']
+INFO:root:Pods in namespace: [{'name': 'apple', 'status': 'Running', 'restarts': 1}, {'name': 'orange', 'status': 'Running', 'restarts': 1}]
+INFO:root:Response: The status of pod 'orange' is 'Running'.
+INFO:root:Received query: How many nodes are there in the cluster?
+INFO:root:Parsed intents: {'pods': False, 'namespace': False, 'status': False, 'deployments': False, 'logs': False}, keywords: ['how', 'many', 'nodes', 'are', 'there', 'in', 'the', 'cluster']
+INFO:root:Response: I'm sorry, I couldn't understand your query. Please try rephrasing.
+INFO:root:Received query: Which pod is spawned by sample-python?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': False, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'sample', '-', 'python']
+INFO:root:Pods in namespace: [{'name': 'apple', 'status': 'Running', 'restarts': 1}, {'name': 'orange', 'status': 'Running', 'restarts': 1}]
+INFO:root:Response: There are 2 pods in the default namespace.
+INFO:root:Received query: Which pod is spawned by sample-python-deployment?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'sample', '-', 'python', '-', 'deployment']
+INFO:root:Pods in namespace: [{'name': 'apple', 'status': 'Running', 'restarts': 1}, {'name': 'orange', 'status': 'Running', 'restarts': 1}, {'name': 'sample-python-deployment-5dfd8b85d8-45crp', 'status': 'Running', 'restarts': 0}, {'name': 'sample-web-deployment-fc767ff7f-qsxbr', 'status': 'Running', 'restarts': 0}]
+INFO:root:Response: There are 4 pods in the default namespace.
+INFO:root:Received query: Which pod is spawned by sample-python-deployment?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'sample', '-', 'python', '-', 'deployment']
+INFO:root:Pods in namespace: [{'name': 'apple', 'status': 'Running', 'restarts': 1}, {'name': 'orange', 'status': 'Running', 'restarts': 1}, {'name': 'sample-python-deployment-5dfd8b85d8-45crp', 'status': 'Running', 'restarts': 0}, {'name': 'sample-web-deployment-fc767ff7f-qsxbr', 'status': 'Running', 'restarts': 0}]
+INFO:root:Response: There are 4 pods in the default namespace.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod is spawned by sample-python-deployment?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'sample', '-', 'python', '-', 'deployment']
+INFO:root:Response: No deployment name found in the query.
+INFO:root:Received query: Which pod is spawned by sample-python-deployment?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'sample', '-', 'python', '-', 'deployment']
+INFO:root:Response: No deployment name found in the query.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod is spawned by sample-python-deployment?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'sample', '-', 'python', '-', 'deployment']
+INFO:root:Response: No deployment name found in the query.
+INFO:root:Received query: Which pod is spawned by sample-python-deployment?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'sample', '-', 'python', '-', 'deployment']
+INFO:root:Response: No deployment name found in the query.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod is spawned by sample-python-deployment?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'sample', '-', 'python', '-', 'deployment']
+INFO:root:Response: No deployment name found in the query.
+INFO:root:Received query: Which pod is spawned by sample-python-deployment?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'sample', '-', 'python', '-', 'deployment']
+INFO:root:Response: No deployment name found in the query.
+INFO:root:Application shutdown complete.
+ERROR:root:Failed to initialize Kubernetes configuration: Invalid kube-config file. Expected object with name  in C:\Users\Sanket Chaudhary\.kube\config/contexts list
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: What is the status of the pod named 'orange'?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'the', 'pod', 'named', 'orange']
+INFO:root:Pods in namespace: [{'name': 'apple', 'status': 'Running', 'restarts': 2}, {'name': 'orange', 'status': 'Running', 'restarts': 2}, {'name': 'sample-python-deployment-5dfd8b85d8-45crp', 'status': 'Running', 'restarts': 1}, {'name': 'sample-web-deployment-fc767ff7f-qsxbr', 'status': 'Running', 'restarts': 1}]
+INFO:root:Response: The status of pod 'orange' is 'Running'.
+INFO:root:Received query: What is the status of the pod named 'orange'?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'the', 'pod', 'named', 'orange']
+INFO:root:Pods in namespace: [{'name': 'apple', 'status': 'Running', 'restarts': 2}, {'name': 'orange', 'status': 'Running', 'restarts': 2}, {'name': 'sample-python-deployment-5dfd8b85d8-45crp', 'status': 'Running', 'restarts': 1}, {'name': 'sample-web-deployment-fc767ff7f-qsxbr', 'status': 'Running', 'restarts': 1}]
+INFO:root:Response: The status of pod 'orange' is 'Running'.
+INFO:root:Received query: Which pod is spawned by sample-python-deployment??
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'sample', '-', 'python', '-', 'deployment']
+INFO:root:Response: No deployment name found in the query.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod is spawned by sample-python-deployment??
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'sample', '-', 'python', '-', 'deployment']
+INFO:root:Response: Pods spawned by the deployment 'deployment' are: sample-python-deployment-5dfd8b85d8-45crp, sample-web-deployment-fc767ff7f-qsxbr.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod is spawned by sample-python-deployment??
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'sample', '-', 'python', '-', 'deployment']
+INFO:root:Identified deployment name: deployment
+INFO:root:Response: No pods found for the specified deployment.
+INFO:root:Received query: Which pod is spawned by sample-python-deployment??
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'sample', '-', 'python', '-', 'deployment']
+INFO:root:Identified deployment name: deployment
+INFO:root:Response: No pods found for the specified deployment.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: How many pods are in the default namespace?
+INFO:root:Parsed intents: {'pods': True, 'namespace': True, 'status': False, 'deployments': False, 'logs': False}, keywords: ['how', 'many', 'pods', 'are', 'in', 'the', 'default', 'namespace']
+INFO:root:Pods in namespace: [{'name': 'apple', 'status': 'Running', 'restarts': 3}, {'name': 'orange', 'status': 'Running', 'restarts': 3}, {'name': 'sample-python-deployment-5dfd8b85d8-45crp', 'status': 'Running', 'restarts': 2}, {'name': 'sample-web-deployment-fc767ff7f-qsxbr', 'status': 'Running', 'restarts': 2}]
+INFO:root:Response: There are 4 pods in the default namespace.
+INFO:root:Received query: Which pod is spawned by sample-python-deployment?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'sample', '-', 'python', '-', 'deployment']
+INFO:root:Identified deployment name: deployment
+INFO:root:Response: No pods found for the specified deployment.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod is spawned by sample-python-deployment?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'sample', '-', 'python', '-', 'deployment']
+INFO:root:Identified deployment name: deployment
+INFO:root:Response: deployment
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod is spawned by sample-python-deployment?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'sample', '-', 'python', '-', 'deployment']
+INFO:root:Identified deployment name: deployment
+INFO:root:Response: No pods found for the specified deployment.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod is spawned by sample-python-deployment?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'sample', '-', 'python', '-', 'deployment']
+INFO:root:Identified deployment name: deployment
+INFO:root:Response: No pods found for the specified deployment.
+INFO:root:Received query: Which pod is spawned by bot-deployment?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot', '-', 'deployment']
+INFO:root:Identified deployment name: deployment
+INFO:root:Response: No pods found for the specified deployment.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod is spawned by bot-deployment?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot', '-', 'deployment']
+INFO:root:Identified deployment name: deployment
+INFO:root:Response: No pods found for the specified deployment.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod is spawned by bot-deployment?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot', '-', 'deployment']
+INFO:root:Extracted deployment name: deployment
+WARNING:root:Deployment deployment not found.
+INFO:root:Response: No pods found for the deployment deployment.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod is spawned by bot-deployment?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot', '-', 'deployment']
+INFO:root:Final deployment name after trimming: deployment
+WARNING:root:Deployment deployment not found.
+INFO:root:Response: No pods found for the deployment deployment.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod is spawned by bot-deployment?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['whichpodisspawnedbybot-deployment']
+INFO:root:Final deployment name after trimming: 
+ERROR:root:Error processing query: 'NoneType' object has no attribute 'selector'
+Traceback (most recent call last):
+  File "D:\cleric assignment\assignment\cleric-query-agent\main.py", line 204, in handle_query
+    pods = get_pods_by_deployment(deployment_name)
+  File "D:\cleric assignment\assignment\cleric-query-agent\kube_utils.py", line 145, in get_pods_by_deployment
+    selector = deployment.spec.selector.match_labels
+AttributeError: 'NoneType' object has no attribute 'selector'
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod is spawned by bot-deployment?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot', '-', 'deployment']
+INFO:root:Extracted deployment name: deployment
+INFO:root:Final deployment name after trimming: deployment
+WARNING:root:Deployment deployment not found.
+INFO:root:Response: No pods found for the deployment deployment.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: What is the status of the pod named 'orange'?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'the', 'pod', 'named', 'orange']
+INFO:root:Pods in namespace: [{'name': 'apple', 'status': 'Running', 'restarts': 3}, {'name': 'bot-deployment-66d64568bb-mc4h2', 'status': 'Running', 'restarts': 0}, {'name': 'orange', 'status': 'Running', 'restarts': 3}, {'name': 'website-deployment-dbc8b97cd-9ndzm', 'status': 'Running', 'restarts': 0}]
+INFO:root:Response: The status of the pod orange is Running.
+INFO:root:Received query: How many nodes are there in the cluster?
+INFO:root:Parsed intents: {'pods': False, 'namespace': False, 'status': False, 'deployments': False, 'logs': False}, keywords: ['how', 'many', 'nodes', 'are', 'there', 'in', 'the', 'cluster']
+INFO:root:Response: I'm sorry, I couldn't understand your query. Please try rephrasing.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: How many nodes are there in the cluster?
+INFO:root:Parsed intents: {'pods': False, 'namespace': False, 'status': False, 'deployments': False, 'logs': False}, keywords: ['how', 'many', 'nodes', 'are', 'there', 'in', 'the', 'cluster']
+INFO:root:Response: I'm sorry, I couldn't understand your query. Please try rephrasing.
+INFO:root:Received query: Which pod is spawned by bot-deployment?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot', '-', 'deployment']
+INFO:root:Extracted deployment name: deployment
+INFO:root:Final deployment name after trimming: deployment
+ERROR:root:Error processing query: (404)
+Reason: Not Found
+HTTP response headers: HTTPHeaderDict({'Audit-Id': 'd65f70b0-f58b-4fb3-8ad3-c8ad25382646', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'X-Kubernetes-Pf-Flowschema-Uid': '55c49099-120f-4417-8cb6-239683cffe70', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'c67fa760-c6c3-46a1-aab6-82afc2f2b52e', 'Date': 'Sun, 08 Dec 2024 19:39:01 GMT', 'Content-Length': '222'})
+HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"deployments.apps \"deployment\" not found","reason":"NotFound","details":{"name":"deployment","group":"apps","kind":"deployments"},"code":404}
+
+Traceback (most recent call last):
+  File "D:\cleric assignment\assignment\cleric-query-agent\main.py", line 206, in handle_query
+    pods = get_pods_by_deployment(deployment_name)
+  File "D:\cleric assignment\assignment\cleric-query-agent\kube_utils.py", line 149, in get_pods_by_deployment
+    deployment = apps_v1.read_namespaced_deployment(deployment_name, namespace)
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\kubernetes\client\api\apps_v1_api.py", line 6530, in read_namespaced_deployment
+    return self.read_namespaced_deployment_with_http_info(name, namespace, **kwargs)  # noqa: E501
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\kubernetes\client\api\apps_v1_api.py", line 6617, in read_namespaced_deployment_with_http_info
+    return self.api_client.call_api(
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\kubernetes\client\api_client.py", line 348, in call_api
+    return self.__call_api(resource_path, method,
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\kubernetes\client\api_client.py", line 180, in __call_api
+    response_data = self.request(
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\kubernetes\client\api_client.py", line 373, in request
+    return self.rest_client.GET(url,
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\kubernetes\client\rest.py", line 244, in GET
+    return self.request("GET", url,
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\kubernetes\client\rest.py", line 238, in request
+    raise ApiException(http_resp=r)
+kubernetes.client.exceptions.ApiException: (404)
+Reason: Not Found
+HTTP response headers: HTTPHeaderDict({'Audit-Id': 'd65f70b0-f58b-4fb3-8ad3-c8ad25382646', 'Cache-Control': 'no-cache, private', 'Content-Type': 'application/json', 'X-Kubernetes-Pf-Flowschema-Uid': '55c49099-120f-4417-8cb6-239683cffe70', 'X-Kubernetes-Pf-Prioritylevel-Uid': 'c67fa760-c6c3-46a1-aab6-82afc2f2b52e', 'Date': 'Sun, 08 Dec 2024 19:39:01 GMT', 'Content-Length': '222'})
+HTTP response body: {"kind":"Status","apiVersion":"v1","metadata":{},"status":"Failure","message":"deployments.apps \"deployment\" not found","reason":"NotFound","details":{"name":"deployment","group":"apps","kind":"deployments"},"code":404}
+
+
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod is spawned by bot-deployment?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot', '-', 'deployment']
+INFO:root:Extracted deployment name: deployment
+INFO:root:Final deployment name after trimming: deployment
+WARNING:root:Deployment deployment not found.
+INFO:root:Response: No pods found for the deployment deployment.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod is spawned by bot-deployment?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot', '-', 'deployment']
+INFO:root:Extracted deployment name: deployment
+INFO:root:Final deployment name after trimming: deployment
+WARNING:root:Deployment 'deployment' not found in namespace 'default'.
+INFO:root:Response: No pods found for the deployment deployment.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod is spawned by bot-deployment?
+ERROR:root:Error processing query: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "D:\cleric assignment\assignment\cleric-query-agent\main.py", line 196, in handle_query
+    intents, keywords = parse_query(request.query)
+ValueError: too many values to unpack (expected 2)
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod is spawned by bot-deployment?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot', '-', 'deployment']
+INFO:root:Identified deployment name: deployment
+INFO:root:Response: No pods found for the specified deployment.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod is spawned by bot-deployment?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot', '-', 'deployment']
+INFO:root:Identified deployment name: deployment
+INFO:root:Response: deployment
+INFO:root:Received query: What is the status of the pod named 'apple'?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'the', 'pod', 'named', 'apple']
+INFO:root:Pods in namespace: [{'name': 'apple', 'status': 'Running'}, {'name': 'bot-deployment-66d64568bb-mc4h2', 'status': 'Running'}, {'name': 'orange', 'status': 'Running'}, {'name': 'website-deployment-dbc8b97cd-9ndzm', 'status': 'Running'}]
+INFO:root:Response: apple
+INFO:root:Received query: What is the status of the pod named 'orange'?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'the', 'pod', 'named', 'orange']
+INFO:root:Pods in namespace: [{'name': 'apple', 'status': 'Running'}, {'name': 'bot-deployment-66d64568bb-mc4h2', 'status': 'Running'}, {'name': 'orange', 'status': 'Running'}, {'name': 'website-deployment-dbc8b97cd-9ndzm', 'status': 'Running'}]
+INFO:root:Response: orange
+INFO:root:Received query: Which pod is spawned by bot-deployment?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot', '-', 'deployment']
+INFO:root:Identified deployment name: deployment
+INFO:root:Response: deployment
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod is spawned by bot-deployment?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot', '-', 'deployment'], deployment_name: deployment
+INFO:root:Response: Pods spawned by deployment 'deployment': bot-deployment-66d64568bb-mc4h2, website-deployment-dbc8b97cd-9ndzm
+INFO:root:Received query: What is the status of the pod named 'apple'?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'the', 'pod', 'named', 'apple'], deployment_name: None
+INFO:root:Pods in namespace: [{'name': 'apple', 'status': 'Running'}, {'name': 'bot-deployment-66d64568bb-mc4h2', 'status': 'Running'}, {'name': 'orange', 'status': 'Running'}, {'name': 'website-deployment-dbc8b97cd-9ndzm', 'status': 'Running'}]
+INFO:root:Response: The pod 'apple' is in the default namespace.
+INFO:root:Received query: What is the status of the pod named 'orange'?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'the', 'pod', 'named', 'orange'], deployment_name: None
+INFO:root:Pods in namespace: [{'name': 'apple', 'status': 'Running'}, {'name': 'bot-deployment-66d64568bb-mc4h2', 'status': 'Running'}, {'name': 'orange', 'status': 'Running'}, {'name': 'website-deployment-dbc8b97cd-9ndzm', 'status': 'Running'}]
+INFO:root:Response: The pod 'orange' is in the default namespace.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: What is the status of the pod named 'orange'?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'the', 'pod', 'named', 'orange'], deployment_name: None
+INFO:root:Response: Running
+INFO:root:Received query: What is the status of the pod named 'apple'?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'the', 'pod', 'named', 'apple'], deployment_name: None
+INFO:root:Response: Running
+INFO:root:Received query: Which pod is spawned by bot-deployment?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot', '-', 'deployment'], deployment_name: deployment
+WARNING:root:Deployment 'deployment' not found.
+INFO:root:Response: No pods found for the deployment 'deployment'.
+INFO:root:Received query: How many nodes are there in the cluster?
+INFO:root:Parsed intents: {'pods': False, 'namespace': False, 'status': False, 'deployments': False, 'logs': False}, keywords: ['how', 'many', 'nodes', 'are', 'there', 'in', 'the', 'cluster'], deployment_name: None
+INFO:root:Response: 1
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod is spawned by bot-deployment?
+ERROR:root:Error processing query: name 'logging' is not defined
+Traceback (most recent call last):
+  File "D:\cleric assignment\assignment\cleric-query-agent\main.py", line 196, in handle_query
+    intents, keywords, deployment_name = parse_query(request.query)
+  File "D:\cleric assignment\assignment\cleric-query-agent\nlp_utils.py", line 62, in parse_query
+    logging.info(f"Identified Intents: {identified_intents}, Extracted Keywords: {extracted_keywords}, Deployment Name: {deployment_name}")
+NameError: name 'logging' is not defined
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod is spawned by bot-deployment?
+ERROR:root:Error processing query: name 'logging' is not defined
+Traceback (most recent call last):
+  File "D:\cleric assignment\assignment\cleric-query-agent\main.py", line 196, in handle_query
+    intents, keywords, deployment_name = parse_query(request.query)
+  File "D:\cleric assignment\assignment\cleric-query-agent\nlp_utils.py", line 62, in parse_query
+    logging.info(f"Identified Intents: {identified_intents}, Extracted Keywords: {extracted_keywords}, Deployment Name: {deployment_name}")
+NameError: name 'logging' is not defined
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod is spawned by bot-deployment?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot', '-', 'deployment'], deployment_name: deployment
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000019AF57605E0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /apis/apps/v1/namespaces/default/deployments/deployment
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000019AF5760970>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /apis/apps/v1/namespaces/default/deployments/deployment
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000019AF5760AC0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /apis/apps/v1/namespaces/default/deployments/deployment
+ERROR:root:Error processing query: HTTPSConnectionPool(host='127.0.0.1', port=50669): Max retries exceeded with url: /apis/apps/v1/namespaces/default/deployments/deployment (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000019AF5760070>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+Traceback (most recent call last):
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\connection.py", line 214, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x0000019AF5760070>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\cleric assignment\assignment\cleric-query-agent\main.py", line 202, in handle_query
+    pods = get_pods_by_deployment(deployment_name)
+  File "D:\cleric assignment\assignment\cleric-query-agent\kube_utils.py", line 186, in get_pods_by_deployment
+    deployment = apps_v1.read_namespaced_deployment(deployment_name, namespace)
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\kubernetes\client\api\apps_v1_api.py", line 6530, in read_namespaced_deployment
+    return self.read_namespaced_deployment_with_http_info(name, namespace, **kwargs)  # noqa: E501
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\kubernetes\client\api\apps_v1_api.py", line 6617, in read_namespaced_deployment_with_http_info
+    return self.api_client.call_api(
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\kubernetes\client\api_client.py", line 348, in call_api
+    return self.__call_api(resource_path, method,
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\kubernetes\client\api_client.py", line 180, in __call_api
+    response_data = self.request(
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\kubernetes\client\api_client.py", line 373, in request
+    return self.rest_client.GET(url,
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\kubernetes\client\rest.py", line 244, in GET
+    return self.request("GET", url,
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\kubernetes\client\rest.py", line 217, in request
+    r = self.pool_manager.request(method, url,
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\_request_methods.py", line 135, in request
+    return self.request_encode_url(
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\_request_methods.py", line 182, in request_encode_url
+    return self.urlopen(method, url, **extra_kw)
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\poolmanager.py", line 443, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\connectionpool.py", line 873, in urlopen
+    return self.urlopen(
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\connectionpool.py", line 873, in urlopen
+    return self.urlopen(
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\connectionpool.py", line 873, in urlopen
+    return self.urlopen(
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='127.0.0.1', port=50669): Max retries exceeded with url: /apis/apps/v1/namespaces/default/deployments/deployment (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000019AF5760070>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+INFO:root:Received query: Which pod is spawned by bot-deployment?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot', '-', 'deployment'], deployment_name: deployment
+WARNING:urllib3.connectionpool:Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000019AF57603A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /apis/apps/v1/namespaces/default/deployments/deployment
+WARNING:urllib3.connectionpool:Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000019AF5762620>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /apis/apps/v1/namespaces/default/deployments/deployment
+WARNING:urllib3.connectionpool:Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000019AF5762770>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /apis/apps/v1/namespaces/default/deployments/deployment
+ERROR:root:Error processing query: HTTPSConnectionPool(host='127.0.0.1', port=50669): Max retries exceeded with url: /apis/apps/v1/namespaces/default/deployments/deployment (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000019AF5762890>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+Traceback (most recent call last):
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\connection.py", line 199, in _new_conn
+    sock = connection.create_connection(
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\connection.py", line 693, in connect
+    self.sock = sock = self._new_conn()
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\connection.py", line 214, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x0000019AF5762890>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\cleric assignment\assignment\cleric-query-agent\main.py", line 202, in handle_query
+    pods = get_pods_by_deployment(deployment_name)
+  File "D:\cleric assignment\assignment\cleric-query-agent\kube_utils.py", line 186, in get_pods_by_deployment
+    deployment = apps_v1.read_namespaced_deployment(deployment_name, namespace)
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\kubernetes\client\api\apps_v1_api.py", line 6530, in read_namespaced_deployment
+    return self.read_namespaced_deployment_with_http_info(name, namespace, **kwargs)  # noqa: E501
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\kubernetes\client\api\apps_v1_api.py", line 6617, in read_namespaced_deployment_with_http_info
+    return self.api_client.call_api(
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\kubernetes\client\api_client.py", line 348, in call_api
+    return self.__call_api(resource_path, method,
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\kubernetes\client\api_client.py", line 180, in __call_api
+    response_data = self.request(
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\kubernetes\client\api_client.py", line 373, in request
+    return self.rest_client.GET(url,
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\kubernetes\client\rest.py", line 244, in GET
+    return self.request("GET", url,
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\kubernetes\client\rest.py", line 217, in request
+    r = self.pool_manager.request(method, url,
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\_request_methods.py", line 135, in request
+    return self.request_encode_url(
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\_request_methods.py", line 182, in request_encode_url
+    return self.urlopen(method, url, **extra_kw)
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\poolmanager.py", line 443, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\connectionpool.py", line 873, in urlopen
+    return self.urlopen(
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\connectionpool.py", line 873, in urlopen
+    return self.urlopen(
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\connectionpool.py", line 873, in urlopen
+    return self.urlopen(
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "D:\cleric assignment\assignment\venv\lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='127.0.0.1', port=50669): Max retries exceeded with url: /apis/apps/v1/namespaces/default/deployments/deployment (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x0000019AF5762890>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod is spawned by bot-deployment?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot', '-', 'deployment'], deployment_name: deployment
+WARNING:root:Deployment 'deployment' not found.
+INFO:root:Response: No pods found for the deployment 'deployment'.
+INFO:root:Received query: What is the status of the pod named 'orange'?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'the', 'pod', 'named', 'orange'], deployment_name: None
+INFO:root:Response: Running
+INFO:root:Received query: How many nodes are there in the cluster?
+INFO:root:Parsed intents: {'pods': False, 'namespace': False, 'status': False, 'deployments': False, 'logs': False}, keywords: ['how', 'many', 'nodes', 'are', 'there', 'in', 'the', 'cluster'], deployment_name: None
+INFO:root:Response: 1
+INFO:root:Received query: How many pods are there in the cluster?
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': False, 'logs': False}, keywords: ['how', 'many', 'pods', 'are', 'there', 'in', 'the', 'cluster'], deployment_name: None
+INFO:root:Response: 4
