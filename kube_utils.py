@@ -215,10 +215,13 @@ def get_pod_restarts(pod_name, namespace="default"):
     Returns:
         int: Number of restarts.
     """
+    logging.info(f"Fetching restart count for pod: {pod_name} in namespace: {namespace}")
     pods = get_pods_in_namespace(namespace)
     for pod in pods:
         if pod["name"] == pod_name:
+            logging.info(f"'{pod_name}' restarts: {pod['restarts']}")
             return pod["restarts"]
+    logging.warning(f"Pod '{pod_name}' not found in namespace '{namespace}'.")
     return None
 
 def get_pods_by_deployment(deployment_name, namespace="default"):

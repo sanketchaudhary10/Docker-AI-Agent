@@ -43,7 +43,7 @@ def parse_query(query):
         "pods": ["pod", "pods", "workload", "container"],
         "namespace": ["namespace", "default"],
         "status": ["status", "state", "condition", "restarts"],
-        "deployments": ["deployment", "app", "application", "restarts"],
+        "deployments": ["deployment", "app", "application"],
         "logs": ["log", "event", "detail"]
     }
 
@@ -57,13 +57,13 @@ def parse_query(query):
     deployment_pattern = re.compile(r"[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*")  # Matches names like bot-deployment
     extracted_keywords = deployment_pattern.findall(query_cleaned)
 
-    # Filter out common irrelevant words (like "how", "many", etc.)
-    stop_words = {"how", "many", "has", "the", "had"}
-    extracted_keywords = [kw for kw in extracted_keywords if kw not in stop_words]
+    # Filter out intent-related words and irrelevant keywords
+    stop_words = set(intents["pods"] + intents["status"] + intents["deployments"] + intents["logs"] + ["how", "many", "has", "the", "had"])
+    filtered_keywords = [kw for kw in extracted_keywords if kw not in stop_words]
 
     # Match deployment names
-    deployment_name = next((kw for kw in extracted_keywords if "deployment" in kw.lower()), None)
+    deployment_name = next((kw for kw in filtered_keywords if "deployment" in kw.lower()), None)
 
-    logging.info(f"Identified Intents: {identified_intents}, Extracted Keywords: {extracted_keywords}, Deployment Name: {deployment_name}")
-    return identified_intents, extracted_keywords, deployment_name
+    logging.info(f"Identified Intents: {identified_intents}, Filtered Keywords: {filtered_keywords}, Deployment Name: {deployment_name}")
+    return identified_intents, filtered_keywords, deployment_name
 

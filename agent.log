@@ -1158,3 +1158,43 @@ INFO:root:Received query: How many restarts has the pod 'orange' had?
 INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': True, 'logs': False}, Extracted Keywords: ['restarts', 'pod', 'orange'], Deployment Name: None
 INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': True, 'logs': False}, keywords: ['restarts', 'pod', 'orange'], deployment name: None
 INFO:root:Response: No restarts information found for pod 'restarts'.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: How many restarts has the pod 'orange' had?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, Filtered Keywords: ['orange'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['orange'], deployment name: None
+INFO:root:Fetching restart count for pod: orange in namespace: default
+INFO:root:Found pod 'orange' with restarts: 4
+INFO:root:Response: The pod 'orange' has restarted 4 times.
+INFO:root:Received query: How many restarts has the pod 'apple' had?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, Filtered Keywords: ['apple'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['apple'], deployment name: None
+INFO:root:Fetching restart count for pod: apple in namespace: default
+INFO:root:Found pod 'apple' with restarts: 4
+INFO:root:Response: The pod 'apple' has restarted 4 times.
+INFO:root:Received query: How many restarts has the pod 'bot-deployment' had?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': True, 'logs': False}, Filtered Keywords: ['bot-deployment'], Deployment Name: bot-deployment
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': True, 'logs': False}, keywords: ['bot-deployment'], deployment name: bot-deployment
+INFO:root:Fetching restart count for pod: bot-deployment in namespace: default
+WARNING:root:Pod 'bot-deployment' not found in namespace 'default'.
+INFO:root:Response: No restarts information found for pod 'bot-deployment'.
+INFO:root:Received query: How many restarts has the pod 'bot-deployment-66d64568bb-mc4h2' had?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, Filtered Keywords: ['bot-deployment-66d64568bb-mc4h2'], Deployment Name: bot-deployment-66d64568bb-mc4h2
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['bot-deployment-66d64568bb-mc4h2'], deployment name: bot-deployment-66d64568bb-mc4h2
+INFO:root:Fetching restart count for pod: bot-deployment-66d64568bb-mc4h2 in namespace: default
+INFO:root:Found pod 'bot-deployment-66d64568bb-mc4h2' with restarts: 1
+INFO:root:Response: The pod 'bot-deployment-66d64568bb-mc4h2' has restarted 1 times.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.

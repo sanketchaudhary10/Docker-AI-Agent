@@ -214,7 +214,7 @@ def handle_query(request: QueryRequest):
             if pod_name:
                 restarts = get_pod_restarts(pod_name)
                 if restarts is not None:
-                    answer = f"'{pod_name}' has restarted {restarts} times."
+                    answer = f"The pod '{pod_name}' has restarted {restarts} times."
                 else:
                     answer = f"No restarts information found for pod '{pod_name}'."
             else:
