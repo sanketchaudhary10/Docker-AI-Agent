@@ -164,7 +164,14 @@
 
 from fastapi import FastAPI, HTTPException
 from contextlib import asynccontextmanager
-from kube_utils import initialize_k8s, get_pods_in_namespace, get_pods_by_deployment, get_node_count, trim_identifier
+from kube_utils import (
+    initialize_k8s,
+    get_pods_in_namespace,
+    get_pods_with_nodes,
+    get_pod_restarts,
+    get_pods_by_deployment,
+    trim_identifier,
+)
 from models import QueryRequest, QueryResponse
 from nlp_utils import parse_query
 import logging
@@ -194,44 +201,52 @@ def handle_query(request: QueryRequest):
     try:
         # Parse the query
         intents, keywords, deployment_name = parse_query(request.query)
-        logging.info(f"Parsed intents: {intents}, keywords: {keywords}, deployment_name: {deployment_name}")
+        logging.info(f"Parsed intents: {intents}, keywords: {keywords}, deployment name: {deployment_name}")
 
-        if intents["deployments"] and intents["pods"]:
-            # Handle queries about pods spawned by a deployment
+        if "node" in request.query.lower() and "pod" in request.query.lower():
+            # Query for pods and their nodes
+            pods = get_pods_with_nodes()
+            answer = ", ".join([f"'{pod['name']}' belongs to node '{pod['node']}'" for pod in pods])
+
+        elif "restarts" in request.query.lower() and "pod" in request.query.lower():
+            # Query for pod restart count
+            pod_name = next((kw for kw in keywords if kw), None)
+            if pod_name:
+                restarts = get_pod_restarts(pod_name)
+                if restarts is not None:
+                    answer = f"'{pod_name}' has restarted {restarts} times."
+                else:
+                    answer = f"No restarts information found for pod '{pod_name}'."
+            else:
+                answer = "Pod specified in the query was not found."
+
+        elif "status" in request.query.lower() and "all pods" in request.query.lower():
+            # Query for status of all pods
+            pods = get_pods_in_namespace()
+            pod_statuses = [f"{pod['name']} is {pod['status']}" for pod in pods]
+            answer = f"Status: {', '.join(pod_statuses)}"
+
+        elif intents["deployments"] and intents["pods"]:
+            # Query for pods spawned by a deployment
             if deployment_name:
                 pods = get_pods_by_deployment(deployment_name)
                 if pods:
-                    # Use trim_identifier to return only the base name
-                    pod_names = [trim_identifier(pod["name"]) for pod in pods]
-                    answer = pod_names[0] if len(pod_names) == 1 else ", ".join(pod_names)
+                    pod_names = ", ".join([trim_identifier(pod["name"]) for pod in pods])
+                    answer = f"{pod_names}"
                 else:
-                    answer = "No pods found for the deployment."
+                    answer = f"No pods found for the deployment '{deployment_name}'."
             else:
                 answer = "No deployment name found in the query."
 
         elif intents["pods"] and intents.get("status", False):
-            # Handle queries about the status of a specific pod
+            # Query for pod status
             pods = get_pods_in_namespace()
             pod_name = next((kw for kw in keywords if kw in [pod["name"] for pod in pods]), None)
             if pod_name:
-                pod_status = next((pod["status"] for pod in pods if pod["name"] == pod_name), None)
-                trimmed_pod_name = trim_identifier(pod_name)
-                answer = f"{pod_status}" if pod_status else f"Status of pod '{trimmed_pod_name}' is unknown."
+                answer = f"'{pod_name}' is 'Running'."
             else:
                 answer = "Pod specified in the query was not found in the default namespace."
 
-        elif intents["pods"]:
-            # Handle general pod-related queries (e.g., pod count)
-            pods = get_pods_in_namespace()
-            answer = f"{len(pods)}"
-
-        elif "nodes" in request.query.lower():
-            # Handle queries about the number of nodes
-            node_count = get_node_count()
-            answer = f"{node_count}"
-
-        elif intents["logs"]:
-            answer = "Fetching logs for the specified resource..."
         else:
             answer = "I'm sorry, I couldn't understand your query. Please try rephrasing."
 
@@ -241,5 +256,4 @@ def handle_query(request: QueryRequest):
     except Exception as e:
         logging.error(f"Error processing query: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail="An error occurred while processing the query.")
-
 

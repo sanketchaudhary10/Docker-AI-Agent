@@ -1027,3 +1027,134 @@ INFO:root:Received query: What is the status of the pod named 'green'?
 INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, Extracted Keywords: ['what', 'is', 'the', 'status', 'of', 'the', 'pod', 'named', 'green'], Deployment Name: None
 INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'the', 'pod', 'named', 'green'], deployment_name: None
 INFO:root:Response: Pod specified in the query was not found in the default namespace.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod belongs to which node?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': False, 'logs': False}, Extracted Keywords: ['which', 'pod', 'belongs', 'to', 'which', 'node'], Deployment Name: None
+ERROR:root:Error processing query: too many values to unpack (expected 2)
+Traceback (most recent call last):
+  File "D:\cleric assignment\assignment\cleric-query-agent\main.py", line 203, in handle_query
+    intents, keywords = parse_query(request.query)
+ValueError: too many values to unpack (expected 2)
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod belongs to which node?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': False, 'logs': False}, Extracted Keywords: ['which', 'pod', 'belongs', 'to', 'which', 'node'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': False, 'logs': False}, keywords: ['which', 'pod', 'belongs', 'to', 'which', 'node'], deployment name: None
+INFO:root:Response: Pod 'apple' belongs to node 'minikube', Pod 'bot-deployment-66d64568bb-mc4h2' belongs to node 'minikube', Pod 'orange' belongs to node 'minikube', Pod 'website-deployment-dbc8b97cd-9ndzm' belongs to node 'minikube'
+INFO:root:Received query: How many restarts has the pod 'orange' had?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': True, 'logs': False}, Extracted Keywords: ['how', 'many', 'restarts', 'has', 'the', 'pod', 'orange', 'had'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': True, 'logs': False}, keywords: ['how', 'many', 'restarts', 'has', 'the', 'pod', 'orange', 'had'], deployment name: None
+INFO:root:Response: No restarts information found for pod 'how'.
+INFO:root:Received query: Which pod is spawned by bot-deployment?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, Extracted Keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot-deployment'], Deployment Name: bot-deployment
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot-deployment'], deployment name: bot-deployment
+INFO:root:Response: 
+INFO:root:Received query: What is the status of all pods in the cluster?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, Extracted Keywords: ['what', 'is', 'the', 'status', 'of', 'all', 'pods', 'in', 'the', 'cluster'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'all', 'pods', 'in', 'the', 'cluster'], deployment name: None
+INFO:root:Response: Statuses: apple is Running, bot-deployment-66d64568bb-mc4h2 is Running, orange is Running, website-deployment-dbc8b97cd-9ndzm is Running
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod belongs to which node?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': False, 'logs': False}, Extracted Keywords: ['which', 'pod', 'belongs', 'to', 'which', 'node'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': False, 'logs': False}, keywords: ['which', 'pod', 'belongs', 'to', 'which', 'node'], deployment name: None
+INFO:root:Response: Pod 'apple' belongs to node 'minikube', Pod 'bot-deployment-66d64568bb-mc4h2' belongs to node 'minikube', Pod 'orange' belongs to node 'minikube', Pod 'website-deployment-dbc8b97cd-9ndzm' belongs to node 'minikube'
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod belongs to which node?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': False, 'logs': False}, Extracted Keywords: ['which', 'pod', 'belongs', 'to', 'which', 'node'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': False, 'logs': False}, keywords: ['which', 'pod', 'belongs', 'to', 'which', 'node'], deployment name: None
+INFO:root:Response: 'apple' belongs to node 'minikube', 'bot-deployment-66d64568bb-mc4h2' belongs to node 'minikube', 'orange' belongs to node 'minikube', 'website-deployment-dbc8b97cd-9ndzm' belongs to node 'minikube'
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod belongs to which node?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': False, 'logs': False}, Extracted Keywords: ['which', 'pod', 'belongs', 'to', 'which', 'node'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': False, 'logs': False}, keywords: ['which', 'pod', 'belongs', 'to', 'which', 'node'], deployment name: None
+INFO:root:Response: 'apple' belongs to node 'minikube', 'bot-deployment-66d64568bb-mc4h2' belongs to node 'minikube', 'orange' belongs to node 'minikube', 'website-deployment-dbc8b97cd-9ndzm' belongs to node 'minikube'
+INFO:root:Received query: How many restarts has the pod 'orange' had?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': True, 'logs': False}, Extracted Keywords: ['how', 'many', 'restarts', 'has', 'the', 'pod', 'orange', 'had'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': True, 'logs': False}, keywords: ['how', 'many', 'restarts', 'has', 'the', 'pod', 'orange', 'had'], deployment name: None
+INFO:root:Response: No restarts information found for pod 'how'.
+INFO:root:Received query: How many restarts has 'orange' had?
+INFO:root:Identified Intents: {'pods': False, 'namespace': False, 'status': True, 'deployments': True, 'logs': False}, Extracted Keywords: ['how', 'many', 'restarts', 'has', 'orange', 'had'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': False, 'namespace': False, 'status': True, 'deployments': True, 'logs': False}, keywords: ['how', 'many', 'restarts', 'has', 'orange', 'had'], deployment name: None
+INFO:root:Response: I'm sorry, I couldn't understand your query. Please try rephrasing.
+INFO:root:Received query: How many restarts has pod 'orange' had?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': True, 'logs': False}, Extracted Keywords: ['how', 'many', 'restarts', 'has', 'pod', 'orange', 'had'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': True, 'logs': False}, keywords: ['how', 'many', 'restarts', 'has', 'pod', 'orange', 'had'], deployment name: None
+INFO:root:Response: No restarts information found for pod 'how'.
+INFO:root:Received query: How many restarts has the pod 'orange' had?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': True, 'logs': False}, Extracted Keywords: ['how', 'many', 'restarts', 'has', 'the', 'pod', 'orange', 'had'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': True, 'logs': False}, keywords: ['how', 'many', 'restarts', 'has', 'the', 'pod', 'orange', 'had'], deployment name: None
+INFO:root:Response: No restarts information found for pod 'how'.
+INFO:root:Received query: Which pod is spawned by bot-deployment?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, Extracted Keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot-deployment'], Deployment Name: bot-deployment
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot-deployment'], deployment name: bot-deployment
+INFO:root:Response: 
+INFO:root:Received query: What is the status of all pods in the cluster?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, Extracted Keywords: ['what', 'is', 'the', 'status', 'of', 'all', 'pods', 'in', 'the', 'cluster'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'all', 'pods', 'in', 'the', 'cluster'], deployment name: None
+INFO:root:Response: Status: apple is Running, bot-deployment-66d64568bb-mc4h2 is Running, orange is Running, website-deployment-dbc8b97cd-9ndzm is Running
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: How many restarts has the pod 'orange' had?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': True, 'logs': False}, Extracted Keywords: ['restarts', 'pod', 'orange'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': True, 'logs': False}, keywords: ['restarts', 'pod', 'orange'], deployment name: None
+INFO:root:Response: No restarts information found for pod 'restarts'.
+INFO:root:Received query: Which pod is spawned by bot-deployment?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, Extracted Keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot-deployment'], Deployment Name: bot-deployment
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot-deployment'], deployment name: bot-deployment
+ERROR:root:Error processing query: name 'logging' is not defined
+Traceback (most recent call last):
+  File "D:\cleric assignment\assignment\cleric-query-agent\main.py", line 232, in handle_query
+    pods = get_pods_by_deployment(deployment_name)
+  File "D:\cleric assignment\assignment\cleric-query-agent\kube_utils.py", line 239, in get_pods_by_deployment
+    logging.info(f"Label selector for deployment '{deployment_name}': {label_selector}")
+NameError: name 'logging' is not defined
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod is spawned by bot-deployment?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, Extracted Keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot-deployment'], Deployment Name: bot-deployment
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot-deployment'], deployment name: bot-deployment
+INFO:root:Label selector for deployment 'bot-deployment': app=bot-deployment
+INFO:root:Pods found for deployment 'bot-deployment': ['bot-deployment-66d64568bb-mc4h2']
+INFO:root:Response: Pods spawned by deployment 'bot-deployment': bot-deployment.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod is spawned by bot-deployment?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, Extracted Keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot-deployment'], Deployment Name: bot-deployment
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot-deployment'], deployment name: bot-deployment
+INFO:root:Label selector for deployment 'bot-deployment': app=bot-deployment
+INFO:root:Pods found for deployment 'bot-deployment': ['bot-deployment-66d64568bb-mc4h2']
+INFO:root:Response: bot-deployment
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: How many restarts has the pod 'orange' had?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': True, 'logs': False}, Extracted Keywords: ['restarts', 'pod', 'orange'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': True, 'logs': False}, keywords: ['restarts', 'pod', 'orange'], deployment name: None
+INFO:root:Response: No restarts information found for pod 'restarts'.

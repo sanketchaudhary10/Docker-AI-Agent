@@ -57,6 +57,10 @@ def parse_query(query):
     deployment_pattern = re.compile(r"[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*")  # Matches names like bot-deployment
     extracted_keywords = deployment_pattern.findall(query_cleaned)
 
+    # Filter out common irrelevant words (like "how", "many", etc.)
+    stop_words = {"how", "many", "has", "the", "had"}
+    extracted_keywords = [kw for kw in extracted_keywords if kw not in stop_words]
+
     # Match deployment names
     deployment_name = next((kw for kw in extracted_keywords if "deployment" in kw.lower()), None)
 
