@@ -1198,3 +1198,61 @@ INFO:root:Application shutdown complete.
 INFO:root:Kubernetes configuration initialized successfully.
 INFO:root:Application shutdown complete.
 INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+ERROR:root:Failed to initialize Kubernetes configuration: Invalid kube-config file. Expected object with name  in C:\Users\Sanket Chaudhary\.kube\config/contexts list
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: How many restarts has the pod 'orange' had?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, Filtered Keywords: ['orange'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['orange'], deployment name: None
+INFO:root:Fetching restart count for pod: orange in namespace: default
+INFO:root:'orange' restarts: 5
+INFO:root:Response: The pod 'orange' has restarted 5 times.
