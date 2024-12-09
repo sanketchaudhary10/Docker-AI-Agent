@@ -864,3 +864,166 @@ INFO:root:Response: 1
 INFO:root:Received query: How many pods are there in the cluster?
 INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': False, 'logs': False}, keywords: ['how', 'many', 'pods', 'are', 'there', 'in', 'the', 'cluster'], deployment_name: None
 INFO:root:Response: 4
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: How many pods are there in the cluster?
+ERROR:root:Error processing query: name 'logging' is not defined
+Traceback (most recent call last):
+  File "D:\cleric assignment\assignment\cleric-query-agent\main.py", line 196, in handle_query
+    intents, keywords, deployment_name = parse_query(request.query)
+  File "D:\cleric assignment\assignment\cleric-query-agent\nlp_utils.py", line 62, in parse_query
+    logging.info(f"Identified Intents: {identified_intents}, Extracted Keywords: {extracted_keywords}, Deployment Name: {deployment_name}")
+NameError: name 'logging' is not defined
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: How many pods are there in the cluster?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': False, 'logs': False}, Extracted Keywords: ['how', 'many', 'pods', 'are', 'there', 'in', 'the', 'cluster'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': False, 'logs': False}, keywords: ['how', 'many', 'pods', 'are', 'there', 'in', 'the', 'cluster'], deployment_name: None
+INFO:root:Response: 4
+INFO:root:Received query: Which pod is spawned by bot-deployment?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, Extracted Keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot-deployment'], Deployment Name: bot-deployment
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot-deployment'], deployment_name: bot-deployment
+INFO:root:Response: bot-deployment-66d64568bb-mc4h2
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: Which pod is spawned by bot-deployment?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, Extracted Keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot-deployment'], Deployment Name: bot-deployment
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot-deployment'], deployment_name: bot-deployment
+INFO:root:Response: bot-deployment
+INFO:root:Received query: Which pod is spawned by website-deployment?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, Extracted Keywords: ['which', 'pod', 'is', 'spawned', 'by', 'website-deployment'], Deployment Name: website-deployment
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'website-deployment'], deployment_name: website-deployment
+INFO:root:Response: website-deployment
+INFO:root:Received query: What is the status of the pod named 'apple'?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, Extracted Keywords: ['what', 'is', 'the', 'status', 'of', 'the', 'pod', 'named', 'apple'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'the', 'pod', 'named', 'apple'], deployment_name: None
+INFO:root:Response: apple is Running
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: What is the status of the pod named 'apple'?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, Extracted Keywords: ['what', 'is', 'the', 'status', 'of', 'the', 'pod', 'named', 'apple'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'the', 'pod', 'named', 'apple'], deployment_name: None
+INFO:root:Response: Running
+INFO:root:Received query: What is the status of the pod named 'orange'?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, Extracted Keywords: ['what', 'is', 'the', 'status', 'of', 'the', 'pod', 'named', 'orange'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'the', 'pod', 'named', 'orange'], deployment_name: None
+INFO:root:Response: Running
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: What is the status of the pod named 'orange'?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, Extracted Keywords: ['what', 'is', 'the', 'status', 'of', 'the', 'pod', 'named', 'orange'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'the', 'pod', 'named', 'orange'], deployment_name: None
+INFO:root:Response: Running
+INFO:root:Received query: Which pod is spawned by python-deployment?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, Extracted Keywords: ['which', 'pod', 'is', 'spawned', 'by', 'python-deployment'], Deployment Name: python-deployment
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'python-deployment'], deployment_name: python-deployment
+WARNING:root:Deployment 'python-deployment' not found.
+INFO:root:Response: No pods found for the deployment.
+INFO:root:Received query: WHICH POD is spawned by BOT-DEPLOYMENT?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, Extracted Keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot-deployment'], Deployment Name: bot-deployment
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'bot-deployment'], deployment_name: bot-deployment
+INFO:root:Response: bot-deployment
+INFO:root:Received query: What is the status of the pod named 'grapes'?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, Extracted Keywords: ['what', 'is', 'the', 'status', 'of', 'the', 'pod', 'named', 'grapes'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'the', 'pod', 'named', 'grapes'], deployment_name: None
+INFO:root:Response: Pod specified in the query was not found in the default namespace.
+INFO:root:Received query: What is the status of the pod named 'orange'?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, Extracted Keywords: ['what', 'is', 'the', 'status', 'of', 'the', 'pod', 'named', 'orange'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'the', 'pod', 'named', 'orange'], deployment_name: None
+INFO:root:Response: Running
+INFO:root:Received query: How many restarts has the pod 'website-deployment-pod' had?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, Extracted Keywords: ['how', 'many', 'restarts', 'has', 'the', 'pod', 'website-deployment-pod', 'had'], Deployment Name: website-deployment-pod
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['how', 'many', 'restarts', 'has', 'the', 'pod', 'website-deployment-pod', 'had'], deployment_name: website-deployment-pod
+WARNING:root:Deployment 'website-deployment-pod' not found.
+INFO:root:Response: No pods found for the deployment.
+INFO:root:Received query: How many restarts has the pod 'website-deployment' had?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, Extracted Keywords: ['how', 'many', 'restarts', 'has', 'the', 'pod', 'website-deployment', 'had'], Deployment Name: website-deployment
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['how', 'many', 'restarts', 'has', 'the', 'pod', 'website-deployment', 'had'], deployment_name: website-deployment
+INFO:root:Response: website-deployment
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Application shutdown complete.
+INFO:root:Kubernetes configuration initialized successfully.
+INFO:root:Received query: How many restarts has the pod 'website-deployment' had?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': True, 'logs': False}, Extracted Keywords: ['how', 'many', 'restarts', 'has', 'the', 'pod', 'website-deployment', 'had'], Deployment Name: website-deployment
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': True, 'logs': False}, keywords: ['how', 'many', 'restarts', 'has', 'the', 'pod', 'website-deployment', 'had'], deployment_name: website-deployment
+INFO:root:Response: website-deployment
+INFO:root:Received query: How many restarts has the pod 'bot-deployment' had?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': True, 'logs': False}, Extracted Keywords: ['how', 'many', 'restarts', 'has', 'the', 'pod', 'bot-deployment', 'had'], Deployment Name: bot-deployment
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': True, 'logs': False}, keywords: ['how', 'many', 'restarts', 'has', 'the', 'pod', 'bot-deployment', 'had'], deployment_name: bot-deployment
+INFO:root:Response: bot-deployment
+INFO:root:Received query: What is the status of all pods in the cluster?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, Extracted Keywords: ['what', 'is', 'the', 'status', 'of', 'all', 'pods', 'in', 'the', 'cluster'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'all', 'pods', 'in', 'the', 'cluster'], deployment_name: None
+INFO:root:Response: Pod specified in the query was not found in the default namespace.
+INFO:root:Received query: What is the status of all pods in the cluster?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, Extracted Keywords: ['what', 'is', 'the', 'status', 'of', 'all', 'pods', 'in', 'the', 'cluster'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'all', 'pods', 'in', 'the', 'cluster'], deployment_name: None
+INFO:root:Response: Pod specified in the query was not found in the default namespace.
+INFO:root:Received query: Fetch logs for the pod 'bot-deployment'
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, Extracted Keywords: ['fetch', 'logs', 'for', 'the', 'pod', 'bot-deployment'], Deployment Name: bot-deployment
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['fetch', 'logs', 'for', 'the', 'pod', 'bot-deployment'], deployment_name: bot-deployment
+INFO:root:Response: bot-deployment
+INFO:root:Received query: How many pods are running in the 'default' namespace?
+INFO:root:Identified Intents: {'pods': True, 'namespace': True, 'status': False, 'deployments': False, 'logs': False}, Extracted Keywords: ['how', 'many', 'pods', 'are', 'running', 'in', 'the', 'default', 'namespace'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': True, 'status': False, 'deployments': False, 'logs': False}, keywords: ['how', 'many', 'pods', 'are', 'running', 'in', 'the', 'default', 'namespace'], deployment_name: None
+INFO:root:Response: 4
+INFO:root:Received query: 
+INFO:root:Identified Intents: {'pods': False, 'namespace': False, 'status': False, 'deployments': False, 'logs': False}, Extracted Keywords: [], Deployment Name: None
+INFO:root:Parsed intents: {'pods': False, 'namespace': False, 'status': False, 'deployments': False, 'logs': False}, keywords: [], deployment_name: None
+INFO:root:Response: I'm sorry, I couldn't understand your query. Please try rephrasing.
+INFO:root:Received query: What is the thing happening with that deployment?
+INFO:root:Identified Intents: {'pods': False, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, Extracted Keywords: ['what', 'is', 'the', 'thing', 'happening', 'with', 'that', 'deployment'], Deployment Name: deployment
+INFO:root:Parsed intents: {'pods': False, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['what', 'is', 'the', 'thing', 'happening', 'with', 'that', 'deployment'], deployment_name: deployment
+INFO:root:Response: I'm sorry, I couldn't understand your query. Please try rephrasing.
+INFO:root:Received query: @$*()What pod$*$ is deployed??
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': False, 'logs': False}, Extracted Keywords: ['what', 'pod', 'is', 'deployed'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': False, 'logs': False}, keywords: ['what', 'pod', 'is', 'deployed'], deployment_name: None
+INFO:root:Response: 4
+INFO:root:Received query: Which pod belongs to which node?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': False, 'logs': False}, Extracted Keywords: ['which', 'pod', 'belongs', 'to', 'which', 'node'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': False, 'logs': False}, keywords: ['which', 'pod', 'belongs', 'to', 'which', 'node'], deployment_name: None
+INFO:root:Response: 4
+INFO:root:Received query: Which pod is spawned by website-deployment?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, Extracted Keywords: ['which', 'pod', 'is', 'spawned', 'by', 'website-deployment'], Deployment Name: website-deployment
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'website-deployment'], deployment_name: website-deployment
+INFO:root:Response: website-deployment
+INFO:root:Received query: Which pod is spawned by python-deployment?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, Extracted Keywords: ['which', 'pod', 'is', 'spawned', 'by', 'python-deployment'], Deployment Name: python-deployment
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': False, 'deployments': True, 'logs': False}, keywords: ['which', 'pod', 'is', 'spawned', 'by', 'python-deployment'], deployment_name: python-deployment
+WARNING:root:Deployment 'python-deployment' not found.
+INFO:root:Response: No pods found for the deployment.
+INFO:root:Received query: What is the status of the pod named 'grapes'?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, Extracted Keywords: ['what', 'is', 'the', 'status', 'of', 'the', 'pod', 'named', 'grapes'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'the', 'pod', 'named', 'grapes'], deployment_name: None
+INFO:root:Response: Pod specified in the query was not found in the default namespace.
+INFO:root:Received query: How many restarts has the pod 'website-deployment' had?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': True, 'logs': False}, Extracted Keywords: ['how', 'many', 'restarts', 'has', 'the', 'pod', 'website-deployment', 'had'], Deployment Name: website-deployment
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': True, 'logs': False}, keywords: ['how', 'many', 'restarts', 'has', 'the', 'pod', 'website-deployment', 'had'], deployment_name: website-deployment
+INFO:root:Response: website-deployment
+INFO:root:Received query: How many restarts has the pod 'orange' had?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': True, 'logs': False}, Extracted Keywords: ['how', 'many', 'restarts', 'has', 'the', 'pod', 'orange', 'had'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': True, 'logs': False}, keywords: ['how', 'many', 'restarts', 'has', 'the', 'pod', 'orange', 'had'], deployment_name: None
+INFO:root:Response: No deployment name found in the query.
+INFO:root:Received query: What is the status of all pods in the cluster?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, Extracted Keywords: ['what', 'is', 'the', 'status', 'of', 'all', 'pods', 'in', 'the', 'cluster'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'all', 'pods', 'in', 'the', 'cluster'], deployment_name: None
+INFO:root:Response: Pod specified in the query was not found in the default namespace.
+INFO:root:Received query: How many pods are running in the 'default' namespace?
+INFO:root:Identified Intents: {'pods': True, 'namespace': True, 'status': False, 'deployments': False, 'logs': False}, Extracted Keywords: ['how', 'many', 'pods', 'are', 'running', 'in', 'the', 'default', 'namespace'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': True, 'status': False, 'deployments': False, 'logs': False}, keywords: ['how', 'many', 'pods', 'are', 'running', 'in', 'the', 'default', 'namespace'], deployment_name: None
+INFO:root:Response: 4
+INFO:root:Received query: What is the status of the pod named 'green'?
+INFO:root:Identified Intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, Extracted Keywords: ['what', 'is', 'the', 'status', 'of', 'the', 'pod', 'named', 'green'], Deployment Name: None
+INFO:root:Parsed intents: {'pods': True, 'namespace': False, 'status': True, 'deployments': False, 'logs': False}, keywords: ['what', 'is', 'the', 'status', 'of', 'the', 'pod', 'named', 'green'], deployment_name: None
+INFO:root:Response: Pod specified in the query was not found in the default namespace.

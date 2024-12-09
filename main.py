@@ -201,10 +201,11 @@ def handle_query(request: QueryRequest):
             if deployment_name:
                 pods = get_pods_by_deployment(deployment_name)
                 if pods:
-                    pod_names = [pod["name"] for pod in pods]
+                    # Use trim_identifier to return only the base name
+                    pod_names = [trim_identifier(pod["name"]) for pod in pods]
                     answer = pod_names[0] if len(pod_names) == 1 else ", ".join(pod_names)
                 else:
-                    answer = f"No pods found for the deployment '{deployment_name}'."
+                    answer = "No pods found for the deployment."
             else:
                 answer = "No deployment name found in the query."
 
@@ -214,7 +215,8 @@ def handle_query(request: QueryRequest):
             pod_name = next((kw for kw in keywords if kw in [pod["name"] for pod in pods]), None)
             if pod_name:
                 pod_status = next((pod["status"] for pod in pods if pod["name"] == pod_name), None)
-                answer = pod_status if pod_status else f"Status of pod '{pod_name}' is unknown."
+                trimmed_pod_name = trim_identifier(pod_name)
+                answer = f"{pod_status}" if pod_status else f"Status of pod '{trimmed_pod_name}' is unknown."
             else:
                 answer = "Pod specified in the query was not found in the default namespace."
 

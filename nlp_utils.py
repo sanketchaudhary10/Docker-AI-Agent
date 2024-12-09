@@ -30,6 +30,7 @@
 
 import spacy
 import re
+import logging
 
 # Load the spaCy model
 nlp = spacy.load("en_core_web_sm")
@@ -41,8 +42,8 @@ def parse_query(query):
     intents = {
         "pods": ["pod", "pods", "workload", "container"],
         "namespace": ["namespace", "default"],
-        "status": ["status", "state", "condition"],
-        "deployments": ["deployment", "app", "application"],
+        "status": ["status", "state", "condition", "restarts"],
+        "deployments": ["deployment", "app", "application", "restarts"],
         "logs": ["log", "event", "detail"]
     }
 
@@ -52,16 +53,13 @@ def parse_query(query):
         for key in intents.keys()
     }
 
-    # Extract Kubernetes-like names
-    extracted_keywords = []
-    pod_pattern = re.compile(r"[a-zA-Z0-9\-]+")  # Matches Kubernetes-like names
-    for token in doc:
-        if pod_pattern.match(token.text):
-            extracted_keywords.append(token.text.strip())
+    # Extract Kubernetes-like names (e.g., bot-deployment)
+    deployment_pattern = re.compile(r"[a-zA-Z0-9]+(?:-[a-zA-Z0-9]+)*")  # Matches names like bot-deployment
+    extracted_keywords = deployment_pattern.findall(query_cleaned)
 
-    # Validate keywords for deployment names
-    valid_keywords = [kw for kw in extracted_keywords if "-" in kw or kw.isalnum()]
-    deployment_name = next((kw for kw in valid_keywords if "deployment" in kw.lower()), None)
+    # Match deployment names
+    deployment_name = next((kw for kw in extracted_keywords if "deployment" in kw.lower()), None)
 
-    return identified_intents, valid_keywords, deployment_name
+    logging.info(f"Identified Intents: {identified_intents}, Extracted Keywords: {extracted_keywords}, Deployment Name: {deployment_name}")
+    return identified_intents, extracted_keywords, deployment_name
 
